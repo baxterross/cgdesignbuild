@@ -1,0 +1,41 @@
+.menu {
+  font-family: $arial;
+  color: $pink;
+  padding: 40px 0;
+  font-size: 21px;
+  border-bottom: 2px solid #aaa;
+
+  ul {
+    @include clearfix;
+  }
+
+  li {
+    display: block;
+    float: left;
+    padding: 10px 35px;
+  }
+
+  .logo {
+    font-size: 56px;
+    line-height: .5;
+    padding-right: 50px;
+    font-weight: 100;
+    font-family: $helvetica;
+
+    span:first-child {
+      display: inline-block;
+      transform:scale(-1, 1);
+    }
+    span:last-child {
+      display: inline-block;
+      position: relative;
+      right: 14px;
+    }
+  }
+
+  a {
+    text-decoration: inherit;
+    color: inherit;
+  }
+  
+}
