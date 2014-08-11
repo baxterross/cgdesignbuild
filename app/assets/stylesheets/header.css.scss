@@ -1,9 +1,9 @@
 .menu {
   font-family: $arial;
-  color: $pink;
   padding: 40px 0;
   font-size: 21px;
-  border-bottom: 2px solid #aaa;
+  border-bottom: 2px solid $pink;
+  color: $grey;
 
   ul {
     @include clearfix;
@@ -21,6 +21,11 @@
     padding-right: 50px;
     font-weight: 100;
     font-family: $helvetica;
+    color: $pink;
+    
+    a:hover {
+      color: inherit;
+    }
 
     span:first-child {
       display: inline-block;
@@ -36,6 +41,10 @@
   a {
     text-decoration: inherit;
     color: inherit;
+    
+    &:hover {
+      color: $black;
+    }
   }
   
 }
