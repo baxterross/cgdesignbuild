@@ -7,12 +7,48 @@
 
   ul {
     @include clearfix;
-  }
+    
+    li {
+      display: block;
+      float: left;
+      padding: 5px 30px;
 
-  li {
-    display: block;
-    float: left;
-    padding: 10px 35px;
+      a {
+        text-decoration: inherit;
+        color: inherit;
+        padding: 5px 5px;
+        
+        &:hover {
+          color: $black;
+        }
+      }
+      
+      ul {
+        display: none;
+        float: left;
+        padding-top: 8px;
+        opacity: 0;
+        transition: height 360ms;
+
+        li {
+          display: block;
+          float: none;
+          width: 0px;
+          color: $grey;
+          font-size: 16px;
+          padding: 2px 0;
+
+          a {
+            white-space: nowrap;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  li:hover ul {
+    opacity: 1;
+    transition: opacity 360ms 360ms;
   }
 
   .logo {
@@ -35,15 +71,6 @@
       display: inline-block;
       position: relative;
       right: 14px;
-    }
-  }
-
-  a {
-    text-decoration: inherit;
-    color: inherit;
-    
-    &:hover {
-      color: $black;
     }
   }
   
