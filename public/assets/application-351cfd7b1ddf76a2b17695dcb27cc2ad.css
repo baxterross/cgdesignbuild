@@ -1869,7 +1869,7 @@ img.responsive {
 
 /* line 31, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .thumbs {
-  padding: 0 2%;
+  padding: 5px 2%;
 }
 /* line 34, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .thumbs img {
@@ -1877,17 +1877,23 @@ img.responsive {
   margin: 5px 2%;
   display: block;
   float: left;
+  cursor: pointer;
+  opacity: .7;
 }
 /* line 42, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
-#built .project-info {
-  padding: 6px 26px 0;
+#built .thumbs img:hover {
+  opacity: 1;
 }
-/* line 46, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 48, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#built .project-info {
+  padding: 8px 23px 0;
+}
+/* line 52, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .project-info .location,
 #built .project-info .completed {
   font-size: 16px;
 }
-/* line 49, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 55, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .project-info .description {
   margin-top: 12px;
 }
