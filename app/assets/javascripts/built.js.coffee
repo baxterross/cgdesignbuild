@@ -1,4 +1,3 @@
-console.log 'hello'
 (($, app) ->
   
   class Built
@@ -6,12 +5,13 @@ console.log 'hello'
     selector_main: '#built .gallery img'
     constructor: ->
     init: =>
+      @main = $(this.selector_main)
       thumbs = $(this.selector_thumb)
-      menuItems.bind
+      thumbs.bind
         click: this.click
     click: (e) =>
       source = $(e.currentTarget).attr 'src'
-      $(this.selector_main).src source
+      @main.attr 'src', source
   
   app.built = new Built
 
