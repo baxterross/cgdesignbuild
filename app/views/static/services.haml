@@ -1,0 +1,7 @@
+.body#services
+  .container
+    .summary= @summary
+    %ul.services
+      - @services.each do |service|
+        %li= service
+.rule

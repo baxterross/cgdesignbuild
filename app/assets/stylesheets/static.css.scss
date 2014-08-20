@@ -1,3 +1,53 @@
 #index {
 
 }
+
+#services {
+    padding: 60px 0;
+    font-weight: 300;
+
+  .summary {
+    margin-bottom: 100px;
+  }
+  ul.services {
+    text-align: right;
+    @include clearfix;
+
+    li {
+      width: 50%;
+      float: right;
+      clear: both;
+      
+      &:before { 
+        display: block;
+        float: left;
+        content: '-'
+      }
+    }
+  }
+}
+
+#built {
+  .thumbs {
+    padding: 0 2%;
+
+    img {
+      width: 44%;
+      margin: 5px 2%;
+      display: block;
+      float: left;
+    }
+  }
+  
+  .project-info {
+    padding: 6px 26px 0;
+
+    .location,
+    .completed {
+      font-size: 16px;
+    }
+    .description {
+      margin-top: 12px;
+    }
+  }
+}

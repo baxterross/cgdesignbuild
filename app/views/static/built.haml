@@ -1,0 +1,19 @@
+.body#built
+  .container
+    .row
+      .gallery.col-sm-9.col-sm-push-3
+        = image_tag @project[:images].first, :class => 'img-responsive'
+      .thumbs.col-sm-3.col-sm-pull-9
+        - @project[:images].each do |image|
+          = image_tag image
+  .rule
+  .container
+    .project-info
+      .location
+        Location:
+        = @project[:location]
+      .completed
+        Completed:
+        = @project[:completion_date]
+      .description
+        = @project[:description]

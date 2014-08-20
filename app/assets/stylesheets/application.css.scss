@@ -1,13 +1,16 @@
-$pink: #ff00ff;
-$grey: #595959;
+$pink: #ec008c;
+$grey: #77787b;
 $black: #000;
 $helvetica: "nimbus-sans";
 $arial: "arial";
+
+@import 'grid';
 
 body {
   font-family: $helvetica;
   margin: 0;
   padding: 0;
+  font-weight: 300;
 }
 
 ul, li {
@@ -53,6 +56,10 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.rule {
+  border-top: 2px solid $pink;
 }
 
 @import 'static';
