@@ -1,3 +1,5 @@
+console log 'cg'
+
 (($) ->
   class CG
     constructor: ->

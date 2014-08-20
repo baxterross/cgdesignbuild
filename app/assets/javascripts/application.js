@@ -11,5 +11,6 @@
 // about supported directives.
 //
 //= require_tree .
-//= require cg
+//= require app
+//= require built
 //= require header

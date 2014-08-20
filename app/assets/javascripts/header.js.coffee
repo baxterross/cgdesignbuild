@@ -1,3 +1,4 @@
+console.log 'header'
 (($, app) ->
   
   class Menu
