@@ -57,3 +57,33 @@
     }
   }
 }
+
+#about {
+  img {
+    padding: 0 40px 0 0;
+  }
+  .about {
+    padding: 30px 0;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 18px;
+  }
+  .contact-form {
+    input[type=text] {
+      width: 140px;
+      box-sizing: border-box;
+      padding: 4px 6px;
+      margin: 0 10px 15px 0;
+    }
+    textarea {
+      width: 448px;
+      height: 120px;
+      padding: 4px 6px;
+    }
+    a {
+      float: right;
+      margin: 2px 32px 8px 0
+    }
+  }
+}

@@ -9,3 +9,5 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'haml'
 
 gem 'rails_serve_static_assets'
+gem 'mailgun-ruby'
+gem 'pry'

@@ -1,0 +1,41 @@
+.body#about
+  .container
+    .row
+      .gallery.col-sm-5
+        = image_tag 'about/catherine.jpg', :class => 'img-responsive'
+      .thumbs.col-sm-7.about
+        CG Design & Development provides innovative, high-end, architectural design solutions and
+        construction management for clients seeking to reinvent their homes and investment properties.
+        %br
+        %br
+        With experience in both the L.A., multi-family, real estate investment market and multi million dollar, private homes,
+        CG creates unique space catered towards modern living. Utilizing natural light, clean lines,and a minimalist approach,
+        CG works with you from start to finish. The firm specializes in high-end luxury remodels, renovations, and residential
+        additions in the Los Angeles region.
+    .row
+      .col-sm-12.about
+        Before starting her own company, Catherine Guentert was a project engineer with the U.S. Army Corps of Engineers on the Flight 93 Memorial.
+        Prior to that, she was an architectural designer with several high-end architecture firms on the East Coast and in Europe.
+        %br
+        %br
+        Catherine Guentert received her M. Architecture from University of Pennsylvania School of Design as well as a Masters Certificate of Real
+        Estate Finance / Commercial Development from The Wharton School. She received a B.S. Architecture and Bachelors of Civil Engineering from
+        The Catholic University of America.
+    .row
+      .col-sm-12
+        %h2 Contact Us
+    .row
+      .col-sm-6.contact-form
+        %form#contact-form{action: '/inquiry', method: 'post'}
+          %input{type: 'text', name: 'name', placeholder: 'Your Name'}
+          %input{type: 'text', name: 'email', placeholder: 'email@address.com'}
+          %input{type: 'text', name: 'phone', placeholder: '310 555 5555'}
+          %textarea{name: 'message', placeholder: 'What can we do for you?'}
+          %a{href: '#inquire'} send
+      .col-sm-6.contact-info
+        email:
+        %a{href: 'mailto:catherine.guentert@cgdesignbuild.com'}
+          catherine.guentert@cgdesignbuild.com
+        %br
+        phone: 240-755-1149
+  .rule
