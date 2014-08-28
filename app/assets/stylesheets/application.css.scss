@@ -4,6 +4,8 @@ $black: #000;
 $helvetica: "nimbus-sans";
 $arial: "arial";
 
+$screen-lg: 768px;
+
 @import 'grid';
 
 body {
@@ -56,12 +58,15 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .rule {
   border-top: 2px solid $pink;
 }
 
-@import 'static';
 @import 'header';
 @import 'footer';
+
+@import 'static';
+@import 'static.lg';
