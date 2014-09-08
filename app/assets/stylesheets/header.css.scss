@@ -1,6 +1,6 @@
 .menu {
   font-family: $arial;
-  padding: 40px 0;
+  padding: 24px 0;
   font-size: 21px;
   border-bottom: 2px solid $pink;
   color: $grey;
@@ -10,17 +10,14 @@
     
     li {
       display: block;
-      float: left;
       padding: 5px 30px;
+      width: 100%;
+      text-align: right;
 
       a {
         text-decoration: inherit;
         color: inherit;
         padding: 5px 5px;
-        
-        &:hover {
-          color: $black;
-        }
       }
       
       ul {
@@ -46,10 +43,6 @@
       }
     }
   }
-  li:hover ul {
-    opacity: 1;
-    transition: opacity 360ms 360ms;
-  }
 
   .logo {
     font-size: 56px;
@@ -58,11 +51,9 @@
     font-weight: 100;
     font-family: $helvetica;
     color: $pink;
+    margin: 6px 0 -44px;
+    text-align: left;
     
-    a:hover {
-      color: inherit;
-    }
-
     span:first-child {
       display: inline-block;
       transform:scale(-1, 1);

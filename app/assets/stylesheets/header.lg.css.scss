@@ -1,0 +1,25 @@
+@media (min-width: $screen-lg) {
+  .menu {
+    ul {
+      li {
+        width: auto;
+        text-align: left;
+        float: left;
+
+        a:hover {
+          color: $black;
+        }
+      }
+      li:hover ul {
+        opacity: 1;
+        transition: opacity 360ms 360ms;
+      }
+      .logo {
+        margin: 0;
+        a:hover {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
