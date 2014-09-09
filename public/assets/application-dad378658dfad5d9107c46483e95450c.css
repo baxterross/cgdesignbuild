@@ -1,0 +1,2180 @@
+/* definitions */
+/* reset */
+/* line 14, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 21, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+body {
+  margin: 0;
+}
+
+/* line 35, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 41, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 45, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 50, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 53, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+/* line 58, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 61, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 64, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 67, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 70, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 74, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 78, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+small {
+  font-size: 80%;
+}
+
+/* super and subscript */
+/* line 83, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 89, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 92, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* images */
+/* line 97, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+img {
+  border: 0;
+}
+
+/* line 100, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 103, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 106, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 111, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 117, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 125, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 130, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+button {
+  overflow: visible;
+}
+
+/* line 134, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 140, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 145, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 149, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 153, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+input {
+  line-height: normal;
+}
+
+/* line 157, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 162, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 165, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 172, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 175, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 180, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 184, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 187, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 190, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 195, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* clearfix */
+/* line 201, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.clearfix, .row {
+  *zoom: 1;
+}
+/* line 204, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.clearfix:before, .row:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 208, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.clearfix:after, .row:after {
+  clear: both;
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 216, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 222, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 227, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+body {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* line 236, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 241, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+figure {
+  margin: 0;
+}
+
+/* line 244, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 247, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.img-responsive {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* container */
+/* line 254, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.container-fluid, .container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 258, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.container {
+  width: 1280px;
+}
+
+/* rows */
+/* columns */
+/* line 269, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+}
+
+/* line 273, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+/* line 276, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 279, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+/* line 282, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+/* line 285, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 288, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+/* line 291, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+/* line 294, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 297, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+/* line 300, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+/* line 303, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 306, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+/* line 309, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+/* line 312, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 315, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+
+/* line 318, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+
+/* line 321, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 324, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+
+/* line 327, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+
+/* line 330, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 333, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+
+/* line 336, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+
+/* line 339, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 342, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+
+/* line 345, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+
+/* line 348, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-pull-0 {
+  right: 0%;
+}
+
+/* line 351, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 354, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+
+/* line 357, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+
+/* line 360, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 363, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+
+/* line 366, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+
+/* line 369, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 372, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+
+/* line 375, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+
+/* line 378, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 381, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+
+/* line 384, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+
+/* line 387, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-push-0 {
+  left: 0%;
+}
+
+/* line 390, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+/* line 393, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+/* line 396, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+/* line 399, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 402, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+/* line 405, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+/* line 408, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 411, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+/* line 414, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+/* line 417, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 420, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+/* line 423, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+/* line 426, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+@media (min-width: 768px) {
+  /* line 430, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  /* line 433, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 436, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 439, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 442, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 445, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 448, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 451, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 454, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 457, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 460, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 463, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 466, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 469, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  /* line 472, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 475, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 478, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 481, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 484, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 487, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 490, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 493, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 496, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 499, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 502, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 505, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-pull-0 {
+    right: 0%;
+  }
+
+  /* line 508, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  /* line 511, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 514, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 517, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 520, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 523, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 526, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 529, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 532, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 535, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 538, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 541, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 544, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-push-0 {
+    left: 0%;
+  }
+
+  /* line 547, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 550, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 553, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 556, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 559, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 562, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 565, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 568, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 571, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 574, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 577, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 580, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 583, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 588, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  /* line 591, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 594, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 597, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 600, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 603, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 606, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 609, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 612, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 615, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 618, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 621, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 624, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 627, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  /* line 630, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 633, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 636, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 639, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 642, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 645, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 648, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 651, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 654, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 657, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 660, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 663, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-pull-0 {
+    right: 0%;
+  }
+
+  /* line 666, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  /* line 669, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 672, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 675, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 678, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 681, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 684, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 687, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 690, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 693, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 696, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 699, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 702, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-push-0 {
+    left: 0%;
+  }
+
+  /* line 705, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 708, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 711, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 714, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 717, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 720, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 723, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 726, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 729, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 732, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 735, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 738, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 741, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 746, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  /* line 749, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 752, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 755, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 758, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 761, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 764, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 767, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 770, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 773, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 776, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 779, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 782, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 785, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  /* line 788, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 791, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 794, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 797, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 800, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 803, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 806, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 809, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 812, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 815, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 818, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 821, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-pull-0 {
+    right: 0%;
+  }
+
+  /* line 824, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  /* line 827, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 830, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 833, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 836, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 839, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 842, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 845, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 848, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 851, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 854, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 857, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 860, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-push-0 {
+    left: 0%;
+  }
+
+  /* line 863, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 866, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 869, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 872, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 875, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 878, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 881, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 884, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 887, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 890, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 893, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 896, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 899, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 905, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+    float: left;
+  }
+
+  /* line 908, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-12 {
+    width: 100%;
+  }
+
+  /* line 911, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 914, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 917, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-9 {
+    width: 75%;
+  }
+
+  /* line 920, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 923, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 926, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-6 {
+    width: 50%;
+  }
+
+  /* line 929, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 932, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 935, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  /* line 938, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 941, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 944, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-12 {
+    right: 100%;
+  }
+
+  /* line 947, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 950, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 953, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-9 {
+    right: 75%;
+  }
+
+  /* line 956, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 959, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 962, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-6 {
+    right: 50%;
+  }
+
+  /* line 965, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 968, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 971, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-3 {
+    right: 25%;
+  }
+
+  /* line 974, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 977, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 980, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-pull-0 {
+    right: 0%;
+  }
+
+  /* line 983, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-12 {
+    left: 100%;
+  }
+
+  /* line 986, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 989, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 992, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-9 {
+    left: 75%;
+  }
+
+  /* line 995, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 998, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 1001, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-6 {
+    left: 50%;
+  }
+
+  /* line 1004, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 1007, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 1010, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-3 {
+    left: 25%;
+  }
+
+  /* line 1013, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 1016, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 1019, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-push-0 {
+    left: 0%;
+  }
+
+  /* line 1022, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 1025, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 1028, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 1031, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 1034, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 1037, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 1040, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 1043, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 1046, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 1049, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 1052, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 1055, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 1058, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .col-xl-offset-0 {
+    margin-left: 0%;
+  }
+}
+/* hidden / visible xs, sm, md, lg */
+/* line 1067, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 1071, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .visible-xs {
+    display: block !important;
+  }
+
+  /* line 1074, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  table.visible-xs {
+    display: table;
+  }
+
+  /* line 1077, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 1081, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1086, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .visible-sm {
+    display: block !important;
+  }
+
+  /* line 1089, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  table.visible-sm {
+    display: table;
+  }
+
+  /* line 1092, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 1096, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1101, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .visible-md {
+    display: block !important;
+  }
+
+  /* line 1104, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  table.visible-md {
+    display: table;
+  }
+
+  /* line 1107, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  tr.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 1111, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1116, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .visible-lg {
+    display: block !important;
+  }
+
+  /* line 1119, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  table.visible-lg {
+    display: table;
+  }
+
+  /* line 1122, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 1126, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1131, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1136, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1141, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  /* line 1146, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .hidden-lg {
+    display: none !important;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 1151, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+  .hidden-xl {
+    display: none !important;
+  }
+}
+/* line 1155, /var/www/cgdesignbuild/app/assets/stylesheets/grid.css.scss */
+.visible-print {
+  display: none !important;
+}
+
+/* line 11, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: "nimbus-sans";
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+/* line 18, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 25, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+img.responsive {
+  display: block;
+  width: 100%;
+}
+
+/* line 55, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+.body .container {
+  width: 960px;
+}
+
+/* line 58, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* line 64, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+.rule {
+  border-top: 2px solid #ec008c;
+}
+
+/* line 1, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu {
+  font-family: "arial";
+  padding: 24px 0;
+  font-size: 21px;
+  border-bottom: 2px solid #ec008c;
+  color: #77787b;
+}
+/* line 33, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+.menu ul:before, .menu ul:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 38, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+.menu ul:after {
+  clear: both;
+}
+/* line 41, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+.menu ul {
+  *zoom: 1;
+}
+/* line 11, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu ul li {
+  display: block;
+  padding: 5px 30px;
+  width: 100%;
+  text-align: right;
+}
+/* line 17, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu ul li a {
+  text-decoration: inherit;
+  color: inherit;
+  padding: 5px 5px;
+}
+/* line 23, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu ul li ul {
+  display: none;
+  float: left;
+  padding-top: 8px;
+  opacity: 0;
+  transition: height 360ms;
+}
+/* line 30, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu ul li ul li {
+  display: block;
+  float: none;
+  width: 0px;
+  color: #77787b;
+  font-size: 16px;
+  padding: 2px 0;
+}
+/* line 38, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu ul li ul li a {
+  white-space: nowrap;
+  padding: 0;
+}
+/* line 47, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu .logo {
+  font-size: 56px;
+  line-height: .5;
+  padding-right: 50px;
+  font-weight: 100;
+  font-family: "nimbus-sans";
+  color: #ec008c;
+  margin: 6px 0 -44px;
+  text-align: left;
+}
+/* line 57, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu .logo span:first-child {
+  display: inline-block;
+  transform: scale(-1, 1);
+}
+/* line 61, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+.menu .logo span:last-child {
+  display: inline-block;
+  position: relative;
+  right: 14px;
+}
+
+@media (min-width: 768px) {
+  /* line 4, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul li {
+    width: auto;
+    text-align: left;
+    float: left;
+  }
+  /* line 9, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul li a:hover {
+    color: black;
+  }
+  /* line 13, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul li:hover ul {
+    opacity: 1;
+    transition: opacity 360ms 360ms;
+  }
+  /* line 17, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul .logo {
+    margin: 0;
+  }
+  /* line 19, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul .logo a:hover {
+    color: inherit;
+  }
+}
+/* line 1, /var/www/cgdesignbuild/app/assets/stylesheets/footer.css.scss */
+.footer {
+  padding: 22px 0 22px;
+  text-align: center;
+  font-family: "nimbus-sans";
+  font-weight: 100;
+}
+
+@media (min-width: 768px) {
+  /* line 2, /var/www/cgdesignbuild/app/assets/stylesheets/footer.lg.css.scss */
+  .footer {
+    padding: 40px 0 36px;
+    text-align: right;
+  }
+}
+/* line 3, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow img {
+  width: 100%;
+  margin: 0 0 12px;
+}
+/* line 7, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow img:last-child {
+  margin-bottom: 0;
+}
+
+/* line 14, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#services {
+  padding: 60px 0;
+  font-weight: 300;
+}
+/* line 18, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#services .summary {
+  margin-bottom: 100px;
+}
+/* line 21, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#services ul.services {
+  text-align: right;
+}
+/* line 33, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#services ul.services:before, #services ul.services:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 38, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#services ul.services:after {
+  clear: both;
+}
+/* line 41, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#services ul.services {
+  *zoom: 1;
+}
+/* line 25, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#services ul.services li {
+  width: 50%;
+  float: right;
+  clear: both;
+}
+/* line 30, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#services ul.services li:before {
+  display: block;
+  float: left;
+  content: "-";
+}
+
+/* line 40, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#built .thumbs {
+  padding: 5px 2%;
+}
+/* line 43, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#built .thumbs img {
+  width: 44%;
+  margin: 5px 2%;
+  display: block;
+  float: left;
+  cursor: pointer;
+  opacity: .7;
+}
+/* line 51, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#built .thumbs img:hover {
+  opacity: 1;
+}
+/* line 57, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#built .project-info {
+  padding: 8px 23px 0;
+}
+/* line 61, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#built .project-info .location,
+#built .project-info .completed {
+  font-size: 16px;
+}
+/* line 64, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#built .project-info .description {
+  margin-top: 12px;
+}
+
+/* line 71, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about img {
+  padding-bottom: 10px;
+}
+/* line 74, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about .about {
+  padding: 10px 10px;
+}
+/* line 77, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about h2 {
+  font-weight: normal;
+  font-size: 18px;
+  padding: 0 10px;
+}
+/* line 82, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about .contact-form {
+  padding: 0 10px;
+}
+/* line 33, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#about .contact-form:before, #about .contact-form:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 38, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#about .contact-form:after {
+  clear: both;
+}
+/* line 41, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#about .contact-form {
+  *zoom: 1;
+}
+/* line 86, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about .contact-form input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 6px;
+  margin: 0 10px 15px 0;
+}
+/* line 92, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about .contact-form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 4px 6px;
+}
+/* line 97, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about .contact-form a {
+  width: 50%;
+  display: block;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 6px 0;
+  margin: 6px auto 8px;
+}
+/* line 106, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about .contact-info {
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  /* line 3, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #index .slideshow {
+    position: relative;
+    height: 580px;
+  }
+  /* line 7, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #index .slideshow .arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    margin: auto 0 auto;
+    border: 60px solid rgba(0, 0, 0, 0.1);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    opacity: .75;
+  }
+  /* line 19, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #index .slideshow .arrow:hover {
+    opacity: 1;
+  }
+  /* line 23, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #index .slideshow .arrow.previous {
+    left: -120px;
+    border-left-color: transparent;
+  }
+  /* line 27, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #index .slideshow .arrow.next {
+    right: -120px;
+    border-right-color: transparent;
+  }
+  /* line 33, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #index .slideshow img {
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: auto;
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  /* line 44, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #index .slideshow img.visible {
+    opacity: 1;
+  }
+
+  /* line 52, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about img {
+    padding: 0 40px 0 0;
+  }
+  /* line 55, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .about {
+    padding: 30px 0;
+  }
+  /* line 58, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about h2 {
+    padding: 0;
+  }
+  /* line 61, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-form {
+    padding: 0;
+  }
+  /* line 64, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-form input[type=text] {
+    width: 140px;
+  }
+  /* line 67, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-form textarea {
+    width: 448px;
+  }
+  /* line 70, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-form a {
+    float: right;
+    margin: 2px 32px 8px 0;
+    width: auto;
+    display: inline;
+    padding: 0;
+    border: 0;
+  }
+  /* line 79, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-info {
+    padding: 0;
+  }
+}
