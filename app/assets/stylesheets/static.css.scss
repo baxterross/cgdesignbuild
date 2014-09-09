@@ -12,18 +12,18 @@
 }
 
 #services {
-    padding: 60px 0;
-    font-weight: 300;
+  padding: 18px 12px;
+  font-weight: 300;
 
   .summary {
-    margin-bottom: 100px;
+    margin-bottom: 36px;
   }
   ul.services {
     text-align: right;
     @include clearfix;
 
     li {
-      width: 50%;
+      width: 95%;
       float: right;
       clear: both;
       

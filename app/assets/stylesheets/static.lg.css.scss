@@ -48,6 +48,20 @@
     }
   }
 
+  #services {
+    padding: 60px 0;
+
+    .summary {
+      margin-bottom: 100px;
+    }
+
+    ul.services {
+      li {
+        width: 50%;
+      }
+    }
+  }
+
   #about {
     img {
       padding: 0 40px 0 0;
