@@ -1,5 +1,49 @@
 #index {
+  .slideshow {
+    position: relative;
+    height: 580px;
 
+    .arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 0;
+      width: 0;
+      margin: auto 0 auto;
+      border: 60px solid rgba(#000, .1);
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      opacity: .75;
+      
+      &:hover {
+        opacity: 1;
+      }
+
+      &.previous {
+        left: -120px;
+        border-left-color: transparent;
+      }
+      &.next {
+        right: -120px;
+        border-right-color: transparent;
+      }
+    }
+    img {
+      display: block;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: auto;
+      opacity: 0;
+      transition: opacity 300ms;
+      
+      &.visible {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 #services {

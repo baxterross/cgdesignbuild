@@ -1,15 +1,3 @@
-(($) ->
-  class CG
-    constructor: ->
-      $ this.init
-    init: =>
-      this.menu.init()
-      this.built.init()
-      this.contactForm.init()
-
-  window.cg = new CG
-)(jQuery)
-
 (($, app) ->
   class ContactForm
     selector: '#contact-form'

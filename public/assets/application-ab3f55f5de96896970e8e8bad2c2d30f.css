@@ -1830,7 +1830,7 @@ img.responsive {
 /* line 1, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu {
   font-family: "arial";
-  padding: 40px 0;
+  padding: 24px 0;
   font-size: 21px;
   border-bottom: 2px solid #ec008c;
   color: #77787b;
@@ -1853,20 +1853,17 @@ img.responsive {
 /* line 11, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu ul li {
   display: block;
-  float: left;
   padding: 5px 30px;
+  width: 100%;
+  text-align: right;
 }
-/* line 16, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+/* line 17, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu ul li a {
   text-decoration: inherit;
   color: inherit;
   padding: 5px 5px;
 }
-/* line 21, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
-.menu ul li a:hover {
-  color: black;
-}
-/* line 26, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+/* line 23, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu ul li ul {
   display: none;
   float: left;
@@ -1874,7 +1871,7 @@ img.responsive {
   opacity: 0;
   transition: height 360ms;
 }
-/* line 33, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+/* line 30, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu ul li ul li {
   display: block;
   float: none;
@@ -1883,17 +1880,12 @@ img.responsive {
   font-size: 16px;
   padding: 2px 0;
 }
-/* line 41, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+/* line 38, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu ul li ul li a {
   white-space: nowrap;
   padding: 0;
 }
-/* line 49, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
-.menu li:hover ul {
-  opacity: 1;
-  transition: opacity 360ms 360ms;
-}
-/* line 54, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+/* line 47, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu .logo {
   font-size: 56px;
   line-height: .5;
@@ -1901,41 +1893,113 @@ img.responsive {
   font-weight: 100;
   font-family: "nimbus-sans";
   color: #ec008c;
+  margin: 6px 0 -44px;
+  text-align: left;
 }
-/* line 62, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
-.menu .logo a:hover {
-  color: inherit;
-}
-/* line 66, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+/* line 57, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu .logo span:first-child {
   display: inline-block;
   transform: scale(-1, 1);
 }
-/* line 70, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
+/* line 61, /var/www/cgdesignbuild/app/assets/stylesheets/header.css.scss */
 .menu .logo span:last-child {
   display: inline-block;
   position: relative;
   right: 14px;
 }
 
+@media (min-width: 768px) {
+  /* line 4, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul li {
+    width: auto;
+    text-align: left;
+    float: left;
+  }
+  /* line 9, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul li a:hover {
+    color: black;
+  }
+  /* line 13, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul li:hover ul {
+    opacity: 1;
+    transition: opacity 360ms 360ms;
+  }
+  /* line 17, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul .logo {
+    margin: 0;
+  }
+  /* line 19, /var/www/cgdesignbuild/app/assets/stylesheets/header.lg.css.scss */
+  .menu ul .logo a:hover {
+    color: inherit;
+  }
+}
 /* line 1, /var/www/cgdesignbuild/app/assets/stylesheets/footer.css.scss */
 .footer {
-  padding: 80px 0 40px;
+  padding: 40px 0 36px;
   text-align: right;
   font-family: "nimbus-sans";
   font-weight: 100;
 }
 
-/* line 5, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 2, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow {
+  position: relative;
+  height: 580px;
+}
+/* line 6, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow .arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  margin: auto 0 auto;
+  border: 60px solid rgba(0, 0, 0, 0.1);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  opacity: .75;
+}
+/* line 18, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow .arrow:hover {
+  opacity: 1;
+}
+/* line 22, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow .arrow.previous {
+  left: -120px;
+  border-left-color: transparent;
+}
+/* line 26, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow .arrow.next {
+  right: -120px;
+  border-right-color: transparent;
+}
+/* line 31, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow img {
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: auto;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+/* line 42, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#index .slideshow img.visible {
+  opacity: 1;
+}
+
+/* line 49, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #services {
   padding: 60px 0;
   font-weight: 300;
 }
-/* line 9, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 53, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #services .summary {
   margin-bottom: 100px;
 }
-/* line 12, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 56, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #services ul.services {
   text-align: right;
 }
@@ -1954,24 +2018,24 @@ img.responsive {
 #services ul.services {
   *zoom: 1;
 }
-/* line 16, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 60, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #services ul.services li {
   width: 50%;
   float: right;
   clear: both;
 }
-/* line 21, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 65, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #services ul.services li:before {
   display: block;
   float: left;
   content: "-";
 }
 
-/* line 31, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 75, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .thumbs {
   padding: 5px 2%;
 }
-/* line 34, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 78, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .thumbs img {
   width: 44%;
   margin: 5px 2%;
@@ -1980,54 +2044,82 @@ img.responsive {
   cursor: pointer;
   opacity: .7;
 }
-/* line 42, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 86, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .thumbs img:hover {
   opacity: 1;
 }
-/* line 48, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 92, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .project-info {
   padding: 8px 23px 0;
 }
-/* line 52, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 96, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .project-info .location,
 #built .project-info .completed {
   font-size: 16px;
 }
-/* line 55, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 99, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #built .project-info .description {
   margin-top: 12px;
 }
 
-/* line 62, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 106, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #about img {
   padding-bottom: 10px;
 }
-/* line 65, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 109, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #about .about {
-  padding: 10px 0;
+  padding: 10px 10px;
 }
-/* line 68, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 112, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #about h2 {
   font-weight: normal;
   font-size: 18px;
+  padding: 0 10px;
 }
-/* line 73, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 117, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about .contact-form {
+  padding: 0 10px;
+}
+/* line 33, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#about .contact-form:before, #about .contact-form:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 38, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#about .contact-form:after {
+  clear: both;
+}
+/* line 41, /var/www/cgdesignbuild/app/assets/stylesheets/application.css.scss */
+#about .contact-form {
+  *zoom: 1;
+}
+/* line 121, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #about .contact-form input[type=text] {
-  width: 140px;
+  width: 100%;
   box-sizing: border-box;
   padding: 4px 6px;
   margin: 0 10px 15px 0;
 }
-/* line 79, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 127, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #about .contact-form textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
   padding: 4px 6px;
 }
-/* line 84, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+/* line 132, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
 #about .contact-form a {
-  float: right;
-  margin: 2px 32px 8px 0;
+  width: 50%;
+  display: block;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 6px 0;
+  margin: 6px auto 8px;
+}
+/* line 141, /var/www/cgdesignbuild/app/assets/stylesheets/static.css.scss */
+#about .contact-info {
+  padding: 0 10px;
 }
 
 @media (min-width: 768px) {
@@ -2038,5 +2130,34 @@ img.responsive {
   /* line 6, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
   #about .about {
     padding: 30px 0;
+  }
+  /* line 9, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about h2 {
+    padding: 0;
+  }
+  /* line 12, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-form {
+    padding: 0;
+  }
+  /* line 15, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-form input[type=text] {
+    width: 140px;
+  }
+  /* line 18, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-form textarea {
+    width: 448px;
+  }
+  /* line 21, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-form a {
+    float: right;
+    margin: 2px 32px 8px 0;
+    width: auto;
+    display: inline;
+    padding: 0;
+    border: 0;
+  }
+  /* line 30, /var/www/cgdesignbuild/app/assets/stylesheets/static.lg.css.scss */
+  #about .contact-info {
+    padding: 0;
   }
 }
