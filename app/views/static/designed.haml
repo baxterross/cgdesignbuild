@@ -1,0 +1,20 @@
+.body#designed
+  .container
+    .row
+      .slideshow
+        %a.arrow.previous{ href: 'javascript:void(0);' }
+        %a.arrow.next{ href: 'javascript:void(0);' }
+        .images
+          - @project[:images].each do |image|
+            = image_tag image
+  .rule
+  .container
+    .project-info
+      .type
+        Building Type:
+        = @project[:building_type]
+      .location
+        Location:
+        = @project[:location]
+      .description
+        = @project[:description]

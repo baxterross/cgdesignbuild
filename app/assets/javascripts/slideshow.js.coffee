@@ -15,6 +15,8 @@
       previous.click @previous
       next = @slideshow.find '.arrow.next'
       next.click @next
+
+#      setInterval @next, 3000
     previous: (e) =>
       if @current == @first
         @show @last
