@@ -24,5 +24,25 @@ class DesignedController < ApplicationController
     }
     render 'static/designed'
   end
+
+  def surfaceform
+    @project = {
+      building_type: 'Art Gallery for American Turkish Society',
+      location: 'Chelsea, New York',
+      description: 'Generating building formations based on Islamic patterning, the goal of this project was to provide a sleeve which created
+                    a wrapper around the building and developed a central ramping system that would lead public and private viewers of the art
+                    gallery to the rooftop. This vortex created by the ramp provides a central core to the building as well as the initial interface
+                    with which to build a ramp that would become part of the pedestrian sidewalk.',
+      images: [
+        'surface-form/01.jpg',
+        'surface-form/02a.jpg',
+        'surface-form/02b.jpg',
+        'surface-form/03.jpg',
+        'surface-form/04a.jpg',
+        'surface-form/04b.jpg'
+      ]
+    }
+    render 'static/designed'
+  end
   
 end
