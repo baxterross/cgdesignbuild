@@ -1,0 +1,10 @@
+.slideshow {
+  img {
+    width: 100%;
+    margin: 0 0 12px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@media (min-width: $screen-lg) {
+  .slideshow {
+    position: relative;
+    height: 580px;
+
+    &:hover {
+      .arrow {
+        opacity: .75;
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      height: 0;
+      width: 0;
+      z-index: 1;
+      border: 15px solid rgba(#000, .8);
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      opacity: 0;
+      transition: opacity 100ms;
+      
+      &:hover {
+        opacity: 1;
+      }
+
+      &.previous {
+        margin-left: -60px;
+        border-left-color: transparent;
+      }
+      &.next {
+        margin-left: 30px;
+        border-right-color: transparent;
+      }
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: auto;
+      opacity: 0;
+      transition: opacity 300ms;
+      
+      &.visible {
+        opacity: 1;
+      }
+    }
+  }
+}
