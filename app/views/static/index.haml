@@ -1,9 +1,3 @@
 .body#index
-  .container
-    .slideshow
-      %a.arrow.previous{ href: 'javascript:void(0);' }
-      %a.arrow.next{ href: 'javascript:void(0);' }
-      .images
-        - (1..8).each do |i|
-          %img{ src: image_path('sea-colony/'+i.to_s+'.jpg') }
+  = render partial: 'layouts/slideshow', locals: { images: @images }
   .rule
