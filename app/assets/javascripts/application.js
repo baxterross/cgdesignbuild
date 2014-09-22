@@ -10,6 +10,8 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require ga
+//= require jquery.2.1.1.min
 //= require cg
 //= require contactform
 //= require built
