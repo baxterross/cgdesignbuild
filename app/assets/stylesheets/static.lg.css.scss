@@ -48,4 +48,26 @@
       padding: 0;
     }
   }
+
+  #development {
+    .slideshow {
+      img {
+        display: block;
+      }
+    }
+    
+    .container {
+      background: rgba(#000, .8);
+      font-size: 17px;
+      line-height: 1.8;
+      top: 200px;
+      position:absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 80px 80px;
+    }
+  }
 }

@@ -1,6 +1,11 @@
-.slideshow
-  %a.arrow.previous{ href: 'javascript:void(0);' }
-  %a.arrow.next{ href: 'javascript:void(0);' }
+- unless defined? autoplay
+  - autoplay = false
+.slideshow{ autoplay: autoplay.to_s }
+  - unless defined? hideControls
+    - hideControls = false
+  - unless hideControls
+    %a.arrow.previous{ href: 'javascript:void(0);' }
+    %a.arrow.next{ href: 'javascript:void(0);' }
   .images
     - images.each do |image|
       = image_tag image

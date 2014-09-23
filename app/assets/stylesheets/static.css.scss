@@ -111,3 +111,32 @@
     padding: 0 10px;
   }
 }
+
+#development {
+  position: relative;
+
+  .slideshow {
+    height: auto;
+    width: 100%;
+
+    img {
+      height: auto;
+      width: 100%;
+      display: none;
+      margin: 0;
+      
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+  
+  .container {
+    background: rgba(#000, .95);
+    font-size: 14px;
+    box-shadow: 0 0 100px 10px rgba(#fff, .15);
+    color: #fff;
+    padding: 12px 10px;
+    top: 0;
+  }
+}

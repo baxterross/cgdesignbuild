@@ -16,7 +16,8 @@
       next = @slideshow.find '.arrow.next'
       next.click @next
 
-#      setInterval @next, 3000
+      if @slideshow[0].getAttribute('autoplay') == 'true'
+        setInterval @next, 3000
     previous: (e) =>
       if @current == @first
         @show @last

@@ -12,6 +12,8 @@ Cgdesignbuild::Application.routes.draw do
   get 'designed/contam.no.tech' => 'designed#contamnotech'
   get 'designed/surface.form' => 'designed#surfaceform'
 
+  get 'development' => 'development#index'
+
   get 'about' => 'static#about'
   post 'inquiry' => 'inquiry#create'
 end
